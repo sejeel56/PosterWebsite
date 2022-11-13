@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This is the logo -->
+    <div class="topsection">
+        <img src="img/Untitled-1-2.png" alt="Logo For Poster Generator">
+    </div>
+<!-- Nav bar -->
+<nav> 
+    <div class="topnav">
+        <a class="active" href="#home">Purchase</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+      </div>
+</nav>
+<!-- Progress Loading bar -->
+<main>
+    <div class="progress">
+        <div class="progress__fill"></div>
+        <span class="progress__text">0%</span>
+      </div>
+
+<!-- Adding the poster picture -->
+      <div align="center">
+        <div>
+          <div class="container">
+            <img src="img/il_570xN-5.png" alt="Avatar" class="image">
+            <div class="overlay overlayFade">
+                <div class="text">Laminated 
+                    Price £87.20</div>
+            </div>
+        </div>
+        <div class="container">
+          <img src="img/il_570xN-6.png" alt="Avatar" class="image">
+          <div class="overlay overlayFade">
+              <div class="text">Glossy
+                Price £117.20
+              </div>
+          </div>
+      </div>
+      <div class="container">
+        <img src="img//il_570xN.2161370223_2lwl.jpg" alt="Avatar" class="image">
+        <div class="overlay overlayFade">
+            <div class="text">Plain
+              Price £72.20
+            </div>
+        </div>
+    </div>
+  
+    </div>
+  </div>
+<div class="positioningorder">
+  <!-- This is for the Poster size -->
+  <label for="cars">Poster Size:</label>
+  <select id="posterSize" name="posterSize">
+    <option value=5>Small</option>
+    <option value=10>Medium</option>
+    <option value=15>Large</option>
+  </select>
+  <br>
+
+  <!-- This is for the Poster style -->  
+  <label for="cars">Poster Style:</label>
+  <select id="posterStyle" name="posterStyle">
+    <option value=21>Glossy</option>
+    <option value=15>Laminated</option>
+    <option value=12>Plain</option>
+  </select>
+
+<br>
+
+<label >Qty:</label>
+<input type="number" id="posterQuantity" name="posterQuantity">
+<br>
+<div class="updatebutton">
+<input type="button" id="btnOrder" value="Update Order"> 
+
+<div class="view overlay my-4">
+    <img src=" class="img-fluid" alt="">
+    <a href="50%">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+</div>
+
+<!-- ************** This is for the ORDER DETAILS ****   -->
+<br>
+<div class="ordersum">
+<h3>Order Summary</h3>
+</div>
+Poster Size: <span id="orderSize">Select Size</span><br>
+Poster Style: <span id="orderStyle"></span><br>
+Quantity:<span id="orderQuantity"></span><br><br>
+Total Shipping Cost:<span id="shippingCost"></span><br>
+
+Subtotal:<span id="orderTotal"></span><br>
+
+</div>
+
+<a href="checkout.html" class="btn">Checkout</a>
+</main>
+
+<footer>
+    <div class="textfooter">
+    <header> @Copyright 2021 PostersRUs  </header>
+</div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:cornflowerblue;
+  }
+  /* Resizing the logo picture in the centre */
+  .topsection {
+    
+    height: 99px;
+    width: 1440px;
+    text-align: center;
+  }
+/* This part is styling the nav bar */
+  nav {
+    background-color: rgba(0, 0, 0, 0.39);
+    height: 48px;
+    width: 1440px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #20a7f5c2;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #000000;
+  }
+  
+  .topnav a.active {
+    background-color: #2387d8;
+    color: white;
+  }
+  
+  /* Styling the progress bar */
+  .progress {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background: #9cbab4;
+    border-radius: 5px;
+    overflow: hidden;
+    top: 160px;
+    left: 628px;
+    
+  }
+  
+  .progress__fill {
+    width: 0%;
+    height: 100%;
+    background: #009579;
+    transition: all 9s;
+  }
+  
+  .progress__text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font: bold 14px "Quicksand", sans-serif;
+    color: #ffffff;
+  }
+    /* Styling the containers */
+  .container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 60px;
+  }
+
+  .image {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+  }
+  
+  .overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #ff946bbd;
+  }
+  
+  .overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #008cba;
+  }
+  .container:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+  }
+  
+  .overlayLeft{
+    height: 100%;
+    width:0;
+    top:0;
+    left:0;
+    background-color: #00b1ba;
+  }
+  .overlayRight{
+    height: 100%;
+    width: 0;
+    top:0;
+    right:0;
+    background-color: #12888e;
+  }
+  .container:hover .overlayLeft ,.container:hover .overlayRight {
+    width: 100%;
+  }
+  .overlayTop{
+    width: 100%;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #d63c58;
+  }
+  .overlayBottom{
+    width: 100%;
+    height: 0;
+    bottom:0;
+    left:0;
+    background-color: #941e33;
+  }
+  .container:hover .overlayTop ,.container:hover .overlayBottom {
+    height: 100%;
+  }
+  .overlayCross{
+    width: 0%;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #e47a52;
+  }
+  .container:hover .overlayCross {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .postersize {
+    position: absolute;
+    left: 618px;
+    top: 437px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .positioningorder{
+      padding-left: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      align-items: center; 
+      position:fixed;
+      top: 426px;
+      left: 500px ;
+      background-color: rgba(0, 0, 0, 0.253);
+      height: 258px;
+      width: 400px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  footer {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.315);
+      height: 55px;
+      width: 1440px;
+      top: 734px;
+  }
+
+  .textfooter {
+      position: absolute;
+      font-family: 'Times New Roman', Times, serif;
+      left: 638px;
+      top: 15px;
+  }
+
+.updatebutton {
+    font-size: 26px;
+    left: 69px;
+    position: absolute;
+}
+
+.ordersum {
+    text-align: center;
+}
+
+/*button css*/
+.btn{
+    position: absolute;
+    left: 700px;
+    top: 643px;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      background: #1E90FF;
+      width: 140px;
+      padding: 14px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow, transform;
+      transition-property: box-shadow, transform;
+  }
+  .btn:hover, .btn:focus, .btn:active{
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+  }
